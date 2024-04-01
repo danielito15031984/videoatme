@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VIDEOATME.INTERFACE", "VIDEOATME.INTERFACE", "{507AAF16-E698-4EA6-A9B9-C2D5F335A6BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VIDEOATME.WEB", "VIDEOATME.WEB", "{F6CC4608-F58A-4042-A101-79E5651F43EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIDEOATME.WEB", "VIDEOATME.INTERFACE\VIDEOATME.WEB\VIDEOATME.WEB.csproj", "{71067F64-92A7-4174-A27A-4709E8FE256D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71067F64-92A7-4174-A27A-4709E8FE256D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71067F64-92A7-4174-A27A-4709E8FE256D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71067F64-92A7-4174-A27A-4709E8FE256D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71067F64-92A7-4174-A27A-4709E8FE256D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6CC4608-F58A-4042-A101-79E5651F43EA} = {507AAF16-E698-4EA6-A9B9-C2D5F335A6BB}
+		{71067F64-92A7-4174-A27A-4709E8FE256D} = {F6CC4608-F58A-4042-A101-79E5651F43EA}
+	EndGlobalSection
+EndGlobal
