@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using VIDEOATME.APPLICATION.TestMessages;
 using VIDEOATME.WEB.Models;
 
 namespace VIDEOATME.WEB.Controllers;
@@ -7,14 +8,17 @@ namespace VIDEOATME.WEB.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly ITestMessagesRepository _testMessages;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, ITestMessagesRepository testMessages)
     {
         _logger = logger;
+        _testMessages = testMessages;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        ViewBag.TestMessages = await _testMessages.GetTestMessages();
         return View();
     }
 

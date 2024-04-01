@@ -1,7 +1,11 @@
+using VIDEOATME.APPLICATION.TestMessages;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ITestMessagesRepository, TestMessagesRepository>();
 
 var app = builder.Build();
 

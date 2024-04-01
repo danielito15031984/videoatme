@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\VIDEOATME.APPLICATION\VIDEOATME.APPLICATION.csproj" />
+  </ItemGroup>
+
 </Project>
